@@ -1,0 +1,79 @@
+:root{
+    --main-color:#27ae60;
+    --secondry-color:#192a56;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Work Sans', sans-serif;
+  
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+img{
+    display: block;
+    width: 100%;
+}
+.section-suptitle{
+    max-width: 500px;
+}
+.main-color{
+    color: var(--main-color) !important;
+}
+
+.log-section{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    color: #f3eded;
+    background-image: url(../images/bgfons.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+   
+}
+
+
+.form-text{
+    color: #f3eded;
+}
+::placeholder{
+    color: #969595 !important;
+    
+}
+
+
+.form-box{
+    border: 3px solid rgb(87, 15, 15);
+    border-radius: 30px;
+    backdrop-filter: blur(10px);
+    padding: 2rem;
+}
+
+.log-btn:hover{
+    background: black!important; 
+
+}
+
+
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.success-message {
+    color: green;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .form-box {
+        width: 100% !important;
+        height: 100% !important;
+    
+}
+}

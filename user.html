@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="./css/all.min.css">
+
+    <!-- bootstrap css link-->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- custom css link -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <section class="log-section" style="background-image: url(./images/bgfons.jpg);">
+        <div class="container pt-5 mx-auto">
+            <div class="signup form-box w-50 mx-auto text-center w-100">
+                <h1 id="welcomeMessage"></h1>
+                <button class="btn btn-danger" onclick="logout()">Log Out</button>
+            </div>
+        </div>
+    </section>
+
+
+    
+<!-- javascript -->
+<script>
+    var userName = localStorage.getItem('currentUser');
+    document.getElementById("welcomeMessage").innerText = "Welcome, " + userName;
+    function logout() {
+    localStorage.removeItem('currentUser');
+
+    window.location.href = "index.html"; }
+</script>
+    <script src="./js/main.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
